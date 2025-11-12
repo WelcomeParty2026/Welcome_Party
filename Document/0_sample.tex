@@ -1,0 +1,119 @@
+% ファイル名は「番号_タイトル.tex」
+% 番号はNotionを参考
+\section{サンプル}  % 割り振りの名前を記入
+
+\subsection{場所・人員配置}
+\begin{table}[h]
+  \centering
+  \begin{minipage}[t]{0.48\columnwidth}
+    \centering
+    \caption{場所・該当グループ}
+    % グループは2/10に分けたやつです．企画書班のNotionにも追加しておくので参考にしておいてください．
+    \begin{tabular}{cl}
+      \hline
+      場所 & 体育館 \\
+      \hline
+      グループ & 先遣隊 \\
+       & 後遣隊 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.48\columnwidth}
+    \centering
+    \caption{役割分担}
+    \begin{tabular}{ll}
+      \hline
+      \multicolumn{1}{c}{役割} & \multicolumn{1}{c}{担当者} \\
+      \hline
+      役割1 & 人物A，人物B \\
+      役割2 & 人物C，人物D，人物E \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+\end{table}
+
+\subsection{詳細タイムスケジュール}
+\vspace{0.5em}
+\fontsize{8pt}{12pt}\selectfont
+
+\begin{longtable}[c]{|p{.04\textwidth}|p{.2\textwidth}|p{.25\textwidth}|p{.45\textwidth}|}
+  \caption{スケジュール} \\
+  \hline
+  \multicolumn{1}{|c|}{時間} & \multicolumn{1}{c|}{担当} & \multicolumn{1}{c|}{内容} & \multicolumn{1}{c|}{備考} \\
+  \hline
+  \endfirsthead
+  
+  \hline
+  \multicolumn{1}{|c|}{時間} & \multicolumn{1}{c|}{担当} & \multicolumn{1}{c|}{内容} & \multicolumn{1}{c|}{備考} \\
+  \hline
+  \endhead
+  
+  \hline
+  \endfoot
+  
+  \hline
+  \endlastfoot
+  
+  \begin{tpacol}
+    09:00
+    % 時間は4桁（〇〇:〇〇）で記入する
+  \end{tpacol}&
+  \begin{tpbcol}
+    役割1
+    % 役割or担当者を記入する
+  \end{tpbcol}&
+  \begin{tpccol}
+    内容
+  \end{tpccol}&
+  \begin{tpdcol}
+    備考(ない場合は空白でOK)
+  \end{tpdcol}\\
+
+  % 同じ時間でも担当が違う場合は別の行に記入する(その際の時間の記入の必要はなし)
+  \begin{tpacol}
+    
+  \end{tpacol}&
+  \begin{tpbcol}
+    役割2
+  \end{tpbcol}&
+  \begin{tpccol}
+    内容
+  \end{tpccol}&
+  \begin{tpdcol}
+    備考 \par
+    (表内改行可能です)
+  \end{tpdcol}\\
+
+  \begin{tpacol}
+    
+  \end{tpacol}&
+  \begin{tpbcol}
+    
+  \end{tpbcol}&
+  \begin{tpccol}
+    
+  \end{tpccol}&
+  \begin{tpdcol}
+    
+  \end{tpdcol}\\
+
+
+\end{longtable}
+\normalsize
+
+\subsection{準備物品}
+\begin{table}[h]
+  \centering
+  \caption{物品}
+  \begin{tabular}{lrl}
+    \hline
+    \multicolumn{1}{c}{物品} & \multicolumn{1}{c}{数量} & \multicolumn{1}{c}{使用用途・備考} \\
+    \hline
+    物品A & 2 & 使用用途・備考(特に記載する必要なければ空白でOK) \\
+    物品B & 11 &  \\
+    \hline  
+  \end{tabular}
+\end{table}
+
+\subsection{備考}
+% 特に書くことなければ省略してOK
