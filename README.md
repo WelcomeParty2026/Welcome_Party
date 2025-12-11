@@ -39,26 +39,25 @@ GitHub上で企画書を作成しろと言われましたので、GitHub上で�
 
 ## 作業方法
 
-みなさんにお配りしたtexファイルを編集してもらった後にそれを追加？あげる手順です。
-
 **1. 最新化**
 ます、ローカルの `develop` ブランチを最新の状態にします。
 
 ```bash
 # developブランチに切り替え
-git checkout develop
+git switch develop
 
 # リモート (GitHub) の最新情報を取得
 git pull origin develop
 ```
 
 **2. 作業ブランチの作成**
-`develop` ブランチから、 `feature/〇〇` のブランチを切ります。
+`develop` ブランチから、 `feature/自分の苗字` のブランチを切ります。 *私眞鍋の場合で以下は記述しています*.
 
 ```bash
-# 'feature/update-01_morning' という名前でブランチを作成し、そこに移動するときの例
-git checkout -b feature/update-01_morning
+# 'feature/manabe' という名前でブランチを作成し、そこに移動するときの例
+git checkout -b feature/manabe
 ```
+皆さんは自分の苗字にしてください。
 
 **3. 作業**
 作業し終わったら、コミットします。
@@ -72,23 +71,26 @@ git add 01_morning.tex
 # 変更内容をコミット
 git commit -m "feat: 朝の動きを変更"
 ```
+なんか作業・または変更点がわかりやすいようにダブルクォーテーションの間に文章を記述してください。日本語じゃないとわからないので日本語でお願いします。
 
 **4. リモートにPush**
 作業ブランチをリモート (GitHub) にPushします。
 
 ```bash
-git push origin feature/update-01_morning
+git push origin feature/作成した自分のブランチの名前(苗字なはずです)
 ```
 
 **5. プルリクエスト (Pull Request) の作成**
 
-  * GitHubのサイトを開き、 `feature/update-01_morning` ブランチから `develop` ブランチに向けて**プルリクエストを作成**します。
+  * GitHubのサイトを開き、 `feature/manabe` ブランチから `develop` ブランチに向けて**プルリクエストを作成**します。
   * チームメンバーにレビューを依頼します。今回のチームメンバーは眞鍋にしてください。
 
 **6. マージ**
 
   * レビューが完了し、承認(Approve)されたら、プルリクエストをマージします。
   * これで、編集した文章が `develop` ブランチに反映されます。
+
+この後にブランチを消してもいいですが、消さなくてもいいです。
 
 -----
 
