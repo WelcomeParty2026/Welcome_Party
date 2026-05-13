@@ -1,7 +1,6 @@
 % ファイル名は「番号_タイトル.tex」
 % 番号はNotionを参考
-\newpage
-\section{座談会}  % 割り振りの名前を記入
+\section{サンプル}  % 割り振りの名前を記入
 
 \subsection{場所・人員配置}
 \begin{table}[h]
@@ -12,9 +11,10 @@
     % グループは2/10に分けたやつです．企画書班のNotionにも追加しておくので参考にしておいてください．
     \begin{tabular}{cl}
       \hline
-      場所 & K101 \\
+      場所 & 体育館 \\
       \hline
-      グループ & 全員 \\
+      グループ & 先遣隊 \\
+       & 後遣隊 \\
       \hline
     \end{tabular}
   \end{minipage}
@@ -25,8 +25,8 @@
       \hline
       \multicolumn{1}{c}{役割} & \multicolumn{1}{c}{担当者} \\
       \hline
-      司会 & 細川夏風 \\
-      話す人 & 全員 \\
+      役割1 & 人物A，人物B \\
+      役割2 & 人物C，人物D，人物E \\
       \hline
     \end{tabular}
   \end{minipage}
@@ -53,40 +53,53 @@
   
   \hline
   \endlastfoot
-
-  \begin{tpacol}
-    14:30
-  \end{tpacol}&
-  \begin{tpbcol}
-    司会
-  \end{tpbcol}&
-  \begin{tpccol}
-    座談会開始のお知らせ
-  \end{tpccol}&
-  \begin{tpdcol}
-  \end{tpdcol}\\
   
   \begin{tpacol}
-
+    09:00
+    % 時間は4桁（〇〇:〇〇）で記入する
   \end{tpacol}&
   \begin{tpbcol}
-    それぞれの話題話す人たち
+    役割1
+    % 役割or担当者を記入する
   \end{tpbcol}&
   \begin{tpccol}
-    各場所に移動する
+    内容
+  \end{tpccol}&
+  \begin{tpdcol}
+    備考(ない場合は空白でOK)
+  \end{tpdcol}\\
+
+  % 同じ時間でも担当が違う場合は別の行に記入する(その際の時間の記入の必要はなし)
+  \begin{tpacol}
+    
+  \end{tpacol}&
+  \begin{tpbcol}
+    役割2
+  \end{tpbcol}&
+  \begin{tpccol}
+    内容
+  \end{tpccol}&
+  \begin{tpdcol}
+    備考 \par
+    (表内改行可能です)
+  \end{tpdcol}\\
+
+  \begin{tpacol}
+    
+  \end{tpacol}&
+  \begin{tpbcol}
+    
+  \end{tpbcol}&
+  \begin{tpccol}
+    
   \end{tpccol}&
   \begin{tpdcol}
     
   \end{tpdcol}\\
 
+
 \end{longtable}
 \normalsize
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\textwidth]{document/3_Deta/zadankai_zaseki.png}
-  \caption{座談会のイメージ図}
-\end{figure}
 
 \subsection{準備物品}
 \begin{table}[h]
@@ -96,15 +109,11 @@
     \hline
     \multicolumn{1}{c}{物品} & \multicolumn{1}{c}{数量} & \multicolumn{1}{c}{使用用途・備考} \\
     \hline
-    
-    \hline
+    物品A & 2 & 使用用途・備考(特に記載する必要なければ空白でOK) \\
+    物品B & 11 &  \\
+    \hline  
   \end{tabular}
 \end{table}
 
 \subsection{備考}
-情報学群の公式行事であるので適当なことは言わない．
-
-責任に関しては情報学群が責任を負うことは忘れないように．
-
-マウントとか自慢とかはしないように
 % 特に書くことなければ省略してOK
